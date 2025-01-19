@@ -7,7 +7,24 @@ const audioPlayer = document.getElementById('audio-player');
 const audioSource = document.getElementById('audio-source');
 const audioTester = document.getElementById('audio-tester');
 const audioTesterSource = document.getElementById('audio-tester-source');
-const goButton = document.getElementById('GO')
+const goButton = document.getElementById('GO');
+const playerButtons = document.querySelectorAll(".player-content button");
+
+let selectedButton = null;
+
+function deselectButton(button) {
+    button.textContent = 'Select';
+    button.style.backgroundColor = ''; // Reset to default color
+}
+
+function selectButton(button) {
+    if (selectedButton) {
+        deselectButton(selectedButton);
+    }
+    button.textContent = 'Selected';
+    button.style.backgroundColor = 'white'; // Change to your desired color
+    selectedButton = button;
+}
 
 //Lofi button
 lofiButton.onclick = () => {
@@ -99,3 +116,10 @@ jazzButton.addEventListener('mouseleave', () => {
 goButton.onclick = () => {
     audioPlayer.play();
 }
+
+//Select button
+playerButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        selectButton(button);
+    });
+});

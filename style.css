@@ -1,8 +1,10 @@
+/* General Styling*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
     font-style: normal;
 }
 
+/* Header Styling*/
 header {
     width: 100%;
     height: 100vh;
@@ -50,12 +53,12 @@ header h2 {
 
 #bus {
     position: absolute;
-    top: 50%;
+    bottom: 5vh;
     left: 0;
     z-index: 10;
     width: 600px;
     height: auto;
-    animation: bus 10s linear infinite;
+    /*animation: bus 10s linear infinite;*/
 }
 
 #bus-stop {
@@ -94,6 +97,86 @@ header h2 {
     color: #1E2C35;
     transition: 0.5s ease-in-out;
 }
+
+/* Music Player Styling*/
+#music {
+    height: auto;
+    background-color: #2B3349;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#music h2 {
+    color: #FEA364;
+    font-size: 2rem;
+    margin: 5%;
+}
+
+.player-wrapper  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.player {
+    width: 25%;
+    height: 35vh;
+    border-radius: 25px;
+    margin: 20px;
+    position: relative;
+}
+
+.player img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+
+.player-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba( 0, 0, 0, 0.7);    
+    border-radius: 25px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.player-content h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.player-content:hover {
+    opacity: 1;
+    transition: 0.6s;
+    border: 0.5px solid #FEA364;
+}
+
+#music button {
+    background-color: #FEA364;
+    color: #1E2C35;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    margin: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+/* Animation Styling*/
 
 @keyframes bus {
     0% {
