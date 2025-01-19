@@ -57,7 +57,7 @@ header h2 {
     z-index: 10;
     width: 600px;
     height: auto;
-    /*animation: bus 10s linear infinite;*/
+    animation: bus 10s linear infinite;
 }
 
 #bus-stop {
