@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BzzzStop</title>
+
+        <link rel="stylesheet" href="style.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    </head>
+</html>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>BzzzStop</h1>
+            <h2>Ride, Rest, Arrive--Right on Time!</h2>
+            <div class="cta-header">
+                <a href="#music">Start Now!</a>
+            </div>
+        </div>
+        <img id="bus" src="assets/bus.png" alt="bus">
+        <img id="bus-stop" src="assets/bus_stop.png" alt="bus stop">
+        <div class="road">
+
+        </div>
+    </header>
+    <section id="music">
+        <h2>Select your relaxing music!</h2>
+        <div class="player-wrapper"> 
+            <div class="player" id="lofi-box">
+                <img src="assets/lofi.jpg" alt="lofi">
+                <div class="player-content">
+                    <h3>Lofi</h3>
+                    <button id="lofi">Select</button>
+                </div>
+            </div>
+    
+            <div class="player" id="rock-box">
+                <img src="assets/rock.jpg" alt="heavy-metal">
+                <div class="player-content">
+                    <h3>Heavy Metal</h3>
+                    <button id="rock">Select</button>
+                </div>
+            </div>
+    
+            <div class="player" id="classical-box">
+                <img src="assets/classic.jpg" alt="classical">
+                <div class="player-content">
+                    <h3>Classical</h3>
+                    <button id="classical">Select</button>
+                </div>
+            </div>
+    
+            <div class="player" id="white-box">
+                <img src="assets/white_noise.jpg" alt="white-noise">
+                <div class="player-content">
+                    <h3>White Noise</h3>
+                    <button id="white">Select</button>
+                </div>
+            </div>
+    
+            <div class="player" id="jazz-box">
+                <img src="assets/jazz.jpg" alt="jazz">
+                <div class="player-content">
+                    <h3>Jazz</h3>
+                    <button id="jazz">Select</button>
+                </div>
+            </div>
+
+            <div class="player" id="whale-box">
+                <img src="assets/whale.jpg" alt="whale">
+                <div class="player-content">
+                    <h3>Whale Sounds</h3>
+                    <button id="whale">Select</button>
+                </div>
+            </div>
+        </div>
+
+
+       <audio id="audio-player" controls>
+            <source id="audio-source" src="assets/lucid-dreaming.mp3">
+        <audio id="audio-tester">
+            <source class="player-button" id="audio-tester-source" src="assets/lucid-dreaming.mp3"> 
+        </section>
+
+    <section>
+        <h2>Where do you want to go?</h2>
+        <button id="GO">Go</button>
+    </section>
+    
+    <footer>
+        <p>Made with <i class="fa-solid fa-heart"></i> by the BzzzStop team</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
