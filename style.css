@@ -7,6 +7,9 @@
     overflow-x: hidden;
 }
 
+i {
+    overflow-y: hidden;
+}
 body {
     font-family: "Aclonica", serif;
     font-weight: 400;
