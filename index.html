@@ -91,39 +91,39 @@
             <source class="player-button" id="audio-tester-source" src="assets/lucid-dreaming.mp3"> 
         </section>
 
-    <section>
-        <h2>Where do you want to go?</h2>
-        <button id="GO">Go</button>
-    </section>
-    <div class="jumbotron">
-        <div class="container-fluid">
-            <h1>Find The Distance Between Two Places</h1>
-            <p>This App Will Help You Calculate Your Travelling Distances.</p>
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="from" class="col-xs-2 control-label"><i class="far fa-dot-circle"></i></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="from" placeholder="Origin" class="form-control">
-                    </div>
+    <section id="map">
+
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <h2>Where do you want to go?</h2>
+                <div class="form-container">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <label for="from" class="col-xs-2 control-label"><i class="far fa-dot-circle"></i></label>
+                                <input type="text" id="from" placeholder="Origin" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <label for="to" class="col-xs-2 control-label"><i class="fas fa-map-marker-alt"></i></label>
+                                <input type="text" id="to" placeholder="Destination" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-xs-offset-2 col-xs-10">
+                            <button class="btn btn-info btn-lg" onclick="calcRoute();">
+                                Start
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="to" class="col-xs-2 control-label"><i class="fas fa-map-marker-alt"></i></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="to" placeholder="Destination" class="form-control">
-                    </div>
-                </div>
-            </form>
-            <div class="col-xs-offset-2 col-xs-10">
-                <button class="btn btn-info btn-lg" onclick="calcRoute();">
-                    <i class="fas fa-map-signs"></i> Calculate Route
-                </button>
+            </div>
+            <div class="container-fluid">
+                <div id="googleMap"></div>
+                <div id="output"></div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div id="googleMap" style="width: 100%; height: 400px; margin: 10px auto;"></div>
-            <div id="output"></div>
-        </div>
-    </div>
+    </section>
 
     <footer>
         <p>Made with <i class="fa-solid fa-heart"></i> by the BzzzStop team</p>
