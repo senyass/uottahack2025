@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -38,7 +39,6 @@ header h2 {
     height: 20vh;
     bottom: 0;
     background-color: black;
-    overflow: hidden;
 }
 
 .header-content {
@@ -130,6 +130,7 @@ header h2 {
     border-radius: 25px;
     margin: 20px;
     position: relative;
+    overflow-y: hidden;
 }
 
 .player img {

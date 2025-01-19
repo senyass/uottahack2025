@@ -1,13 +1,37 @@
+//Lofi variables
 const lofiButton = document.getElementById('lofi');
-const heavyButton = document.getElementById('heavy-metal');
-const whalesButton = document.getElementById('whales');
-const whiteButton = document.getElementById('white-noise');
+const lofi = document.getElementById('lofi-box');
+
+//Rock variables
+const rockButton = document.getElementById('rock');
+const rock = document.getElementById('rock-box');
+
+//Classical variabes
+const classicalButton = document.getElementById('classical');
+const classical = document.getElementById('classical-box');
+
+//White Noise variables
+const whiteButton = document.getElementById('white');
+const white = document.getElementById('white-box');
+
+//Jazz variables 
 const jazzButton = document.getElementById('jazz');
+const jazz = document.getElementById('jazz-box');
+
+//Whale variables
+const whaleButton = document.getElementById('whale');
+const whale = document.getElementById('whale-box');
+
+
+//Audio variables
 const audioPlayer = document.getElementById('audio-player');
-const audioSource = document.getElementById('audio-source');
+const audioSource =document.getElementById('audio-source');
 const audioTester = document.getElementById('audio-tester');
 const audioTesterSource = document.getElementById('audio-tester-source');
+
+//Go button variables
 const goButton = document.getElementById('GO');
+
 const playerButtons = document.querySelectorAll(".player-content button");
 
 let selectedButton = null;
@@ -32,51 +56,50 @@ lofiButton.onclick = () => {
     audioPlayer.load();
 };
 
-lofiButton.addEventListener('mouseenter', () => {
+lofi.addEventListener('mouseenter', () => {
     audioTesterSource.src = "assets/lofi.mp3";
     audioTester.load();
     audioTester.currentTime = 0;
     audioTester.play();
 });
 
-lofiButton.addEventListener('mouseleave', () => {
+lofi.addEventListener('mouseleave', () => {
     audioTester.pause();
 });
 
 //Heavy Metal button
-heavyButton.onclick = () => {
+rockButton.onclick = () => {
     audioSource.src = "assets/heavy-metal.mp3";
     audioPlayer.load();
 };
 
-heavyButton.addEventListener('mouseenter', () => {
+rock.addEventListener('mouseenter', () => {
     audioTesterSource.src = "assets/heavy-metal.mp3";
     audioTester.load();
     audioTester.currentTime = 0;
     audioTester.play();
 });
 
-heavyButton.addEventListener('mouseleave', () => {
+rock.addEventListener('mouseleave', () => {
     audioTester.pause();
 });
 
-//Whales button
-whalesButton.onclick = () => {
-    audioSource.src = "assets/whales.mp3";
+//Classical button
+classicalButton.onclick = () => {
+    audioSource.src = "assets/classical.mp3";
     audioPlayer.load();
 };
 
-whalesButton.addEventListener('mouseenter', () => {
-    audioTesterSource.src = "assets/whale.mp3";
+classical.addEventListener('mouseenter', () => {
+    audioTesterSource.src = "assets/classical.mp3";
     audioTester.load();
     audioTester.currentTime = 0;
     audioTester.play();
 });
 
-whalesButton.addEventListener('mouseleave', () => {
+classical.addEventListener('mouseleave', () => {
     audioTester.pause();
 });
-
 
 //White noise button
 whiteButton.onclick = () => {
@@ -84,14 +107,14 @@ whiteButton.onclick = () => {
     audioPlayer.load();
 };
 
-whiteButton.addEventListener('mouseenter', () => {
+white.addEventListener('mouseenter', () => {
     audioTesterSource.src = "assets/white-noise.mp3";
     audioTester.load();
     audioTester.currentTime = 0;
     audioTester.play();
 });
 
-whiteButton.addEventListener('mouseleave', () => {
+white.addEventListener('mouseleave', () => {
     audioTester.pause();
 });
 
@@ -101,16 +124,35 @@ jazzButton.onclick = () => {
     audioPlayer.load();
 };
 
-jazzButton.addEventListener('mouseenter', () => {
+jazz.addEventListener('mouseenter', () => {
     audioTesterSource.src = "assets/jazz.mp3";
     audioTester.load();
     audioTester.currentTime = 0;
     audioTester.play();
 });
 
-jazzButton.addEventListener('mouseleave', () => {
+jazz.addEventListener('mouseleave', () => {
     audioTester.pause();
 });
+
+
+//Whales button
+whaleButton.onclick = () => {
+    audioSource.src = "assets/whales.mp3";
+    audioPlayer.load();
+};
+
+whale.addEventListener('mouseenter', () => {
+    audioTesterSource.src = "assets/whale.mp3";
+    audioTester.load();
+    audioTester.currentTime = 0;
+    audioTester.play();
+});
+
+whale.addEventListener('mouseleave', () => {
+    audioTester.pause();
+});
+
 
 //Go button
 goButton.onclick = () => {
