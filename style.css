@@ -177,7 +177,26 @@ header h2 {
     margin: 20px;
     transition: 0.5s ease-in-out;
 }
+/* Footer Styling */
+footer {
+    background-color: #1E2C35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    transition: 0.5s ease-in-out;
+    font-size: 1rem;
+}
 
+footer p:hover {
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+
+.fa-heart {
+    color: red;
+}
 /* Animation Styling*/
 
 @keyframes bus {
