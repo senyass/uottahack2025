@@ -22,7 +22,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #1E2C35 0%, #966964 50%, #FEA364 100%);
+    background: linear-gradient(180deg, #1e2535 0%, #966964 50%, #FEA364 100%);
 }
 
 header h1 {
@@ -43,7 +43,7 @@ header h2 {
     width: 100%;
     height: 20vh;
     bottom: 0;
-    background-color: black;
+    background-color: #1d1b1b;
 }
 
 .header-content {
