@@ -1,26 +1,95 @@
-const dreamingButton = document.getElementById('dreaming');
-const lucidButton = document.getElementById('lucid-dreaming');
-const neonButton = document.getElementById('neonscapes');
-const rainButton = document.getElementById('rain-book');
+const lofiButton = document.getElementById('lofi');
+const heavyButton = document.getElementById('heavy-metal');
+const whalesButton = document.getElementById('whales');
+const whiteButton = document.getElementById('white-noise');
+const jazzButton = document.getElementById('jazz');
 const audioPlayer = document.getElementById('audio-player');
 const audioSource = document.getElementById('audio-source');
+const audioTester = document.getElementById('audio-tester');
+const audioTesterSource = document.getElementById('audio-tester-source');
 
-dreamingButton.onclick = () => {
-    audioSource.src = "assets/dreaming.mp3";
+//Lofi button
+lofiButton.onclick = () => {
+    audioSource.src = "assets/lofi.mp3";
     audioPlayer.load();
 };
 
-lucidButton.onclick = () => {
-    audioSource.src = "assets/lucid-dreaming.mp3";
+lofiButton.addEventListener('mouseenter', () => {
+    audioTesterSource.src = "assets/lofi.mp3";
+    audioTester.load();
+    audioTester.currentTime = 0;
+    audioTester.play();
+});
+
+lofiButton.addEventListener('mouseleave', () => {
+    audioTester.pause();
+});
+
+//Heavy Metal button
+heavyButton.onclick = () => {
+    audioSource.src = "assets/heavy-metal.mp3";
     audioPlayer.load();
 };
 
-neonButton.onclick = () => {
-    audioSource.src = "assets/neonscapes.mp3";
+heavyButton.addEventListener('mouseenter', () => {
+    audioTesterSource.src = "assets/heavy-metal.mp3";
+    audioTester.load();
+    audioTester.currentTime = 0;
+    audioTester.play();
+});
+
+heavyButton.addEventListener('mouseleave', () => {
+    audioTester.pause();
+});
+
+//Whales button
+whalesButton.onclick = () => {
+    audioSource.src = "assets/whales.mp3";
     audioPlayer.load();
 };
 
-rainButton.onclick = () => {
-    audioSource.src = "assets/rain-book.mp3";
+whalesButton.addEventListener('mouseenter', () => {
+    audioTesterSource.src = "assets/whale.mp3";
+    audioTester.load();
+    audioTester.currentTime = 0;
+    audioTester.play();
+});
+
+whalesButton.addEventListener('mouseleave', () => {
+    audioTester.pause();
+});
+
+
+//White noise button
+whiteButton.onclick = () => {
+    audioSource.src = "assets/white-noise.mp3";
     audioPlayer.load();
 };
+
+whiteButton.addEventListener('mouseenter', () => {
+    audioTesterSource.src = "assets/white-noise.mp3";
+    audioTester.load();
+    audioTester.currentTime = 0;
+    audioTester.play();
+});
+
+whiteButton.addEventListener('mouseleave', () => {
+    audioTester.pause();
+});
+
+//Jazz button 
+jazzButton.onclick = () => {
+    audioSource.src = "assets/jazz.mp3";
+    audioPlayer.load();
+};
+
+jazzButton.addEventListener('mouseenter', () => {
+    audioTesterSource.src = "assets/jazz.mp3";
+    audioTester.load();
+    audioTester.currentTime = 0;
+    audioTester.play();
+});
+
+jazzButton.addEventListener('mouseleave', () => {
+    audioTester.pause();
+});
