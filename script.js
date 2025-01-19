@@ -167,8 +167,6 @@ playerButtons.forEach(button => {
 });
 
 
-
-
 // Initialize DirectionsService, DirectionsRenderer, and the marker for animation
 let directionsService;
 let directionsDisplay;
@@ -336,4 +334,3 @@ function initAutocomplete() {
         console.log(`Selected Destination: ${place.formatted_address}`);
     });
 }
-*/
