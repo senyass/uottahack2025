@@ -2,13 +2,16 @@
 /*add font family, background image*/
 
 body {
-  color: #5bc0de;
-  font-family: "Poppins", sans-serif;
+  color: #FEA364;
+  font-family: "Aclonica", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #2B3349;
 }
 
 .fa-map-marker-alt,
 .fa-dot-circle {
-  color: #5bc0de;
+  color: #FEA364;
 }
 
 /*Jumbotron*/
@@ -52,12 +55,12 @@ button {
   padding: 10px 20px;
   font-size: 18px;
   color: white;
-  background-color: #5bc0de;
+  background-color: #FEA364;
   border: none;
-  border-radius: 4px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #46a1c3;
+  background-color: white;
 }
