@@ -7,6 +7,7 @@ const audioPlayer = document.getElementById('audio-player');
 const audioSource = document.getElementById('audio-source');
 const audioTester = document.getElementById('audio-tester');
 const audioTesterSource = document.getElementById('audio-tester-source');
+const goButton = document.getElementById('GO')
 
 //Lofi button
 lofiButton.onclick = () => {
@@ -93,3 +94,8 @@ jazzButton.addEventListener('mouseenter', () => {
 jazzButton.addEventListener('mouseleave', () => {
     audioTester.pause();
 });
+
+//Go button
+goButton.onclick = () => {
+    audioPlayer.play();
+}
