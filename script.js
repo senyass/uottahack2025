@@ -336,3 +336,4 @@ function initAutocomplete() {
         console.log(`Selected Destination: ${place.formatted_address}`);
     });
 }
+*/
