@@ -38,6 +38,7 @@ header h2 {
     height: 20vh;
     bottom: 0;
     background-color: black;
+    overflow: hidden;
 }
 
 .header-content {
@@ -58,6 +59,7 @@ header h2 {
     width: 600px;
     height: auto;
     animation: bus 10s linear infinite;
+    overflow: hidden;
 }
 
 #bus-stop {
