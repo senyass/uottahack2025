@@ -138,7 +138,7 @@ jazz.addEventListener('mouseleave', () => {
 
 //Whales button
 whaleButton.onclick = () => {
-    audioSource.src = "assets/whales.mp3";
+    audioSource.src = "assets/whale.mp3";
     audioPlayer.load();
 };
 
